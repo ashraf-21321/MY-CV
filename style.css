@@ -126,3 +126,23 @@ body.dark .nav{background:linear-gradient(180deg, rgba(8,14,26,0.6), transparent
 
 /* small helpers */
 a{color:inherit}
+/* 👇 حل مشكلة قائمة الموبايل */
+.nav-links.open {
+  display: flex !important;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 18px;
+  background: var(--card);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  gap: 10px;
+  animation: slideDown 0.25s ease;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.menu-btn { color: var(--text); z-index: 2000; }
