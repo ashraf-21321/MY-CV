@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ashraf Yasser — Front-End Developer</title>
+
+  <!-- Fonts + Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="description" content="محفظة أعمال Ashraf Yasser — مطور واجهات (HTML/CSS/JS) — مشاريع، مهارات، خبرة، تواصل.">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">
+        <img src="./images/صورة واتساب بتاريخ 2025-10-23 في 16.24.47_f5d664ea.jpg" alt="logo" class="logo-img">
+        <span class="brand-text">Ashraf <strong>Yasser</strong></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">الرئيسية</a>
+        <a href="#about">من أنا</a>
+        <a href="#projects">مشاريعي</a>
+        <a href="#skills">مهاراتي</a>
+        <a href="#contact">تواصل</a>
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+      </nav>
+
+      <button id="menuBtn" class="menu-btn" aria-label="قائمة"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- HERO / HOME -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Ashraf <span>Yasser</span></h1>
+        <p class="lead">Front-End Developer & UI/UX Enthusiast — أُحوّل الأفكار إلى واجهات سريعة، متجاوبة وجذابة.</p>
+
+        <div class="cta-group">
+          <a href="#projects" class="btn primary">شاهد مشاريعي</a>
+          <a href="#contact" class="btn ghost">تواصل معايا</a>
+        </div>
+
+        <ul class="hero-meta">
+          <li><strong id="expYears"></strong> سنوات خبرة</li>
+          <li><strong id="completedProjects"></strong> مشاريع مكتمله</li>
+          <li><strong id="clients"></strong> عملاء كبار </li>
+        </ul>
+      </div>
+
+      <div class="hero-card">
+        <img src="./images/‏‏DALL·E 2025-09-28 18.33.50 - A digital representation of HTML, CSS, and JavaScript logos. The HTML logo is a bold orange shield with 'HTML' written on it. The CSS logo is a blue s - نسخة.webp" alt="Ashraf Yasser" class="profile-img">
+        <div class="card-badges">
+          <span><i class="fa-brands fa-html5"></i> HTML</span>
+          <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+          <span><i class="fa-brands fa-js"></i> JS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about section">
+    <div class="container">
+      <h2 class="section-title">من أنا</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            مصمم ومطور واجهات أمامية (Front-End) أعمل على بناء مواقع وسيرفرات واجهات سريعة، قابلة للتوسّع،
+            وتجربة مستخدم ممتازة. أستخدم أفضل ممارسات الأداء، كتابة كود منظم قابل للصيانة، واشتغال مع Git لنشر الشغل.
+          </p>
+
+          <ul class="about-list">
+            <li><strong>التعليم:</strong> بكالوريوس علوم حاسوب / دورات تطوير واجهات</li>
+            <li><strong>مهارات إضافية:</strong> SEO أساسي، تحسين أداء، عمل prototypes على Figma</li>
+            <li><strong>أدوات:</strong> VSCode, Git, Chrome DevTools, Figma</li>
+          </ul>
+
+          <div class="about-actions">
+            <a class="btn primary" href="#projects">المشاريع</a>
+          
+          </div>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat">
+            <h3 class="stat-num" >0</h3>
+            <p>ساعات من العمل المتواصل</p>
+          </div>
+          <div class="stat">
+            <h3 class="stat-num" >0</h3>
+            <p>مشاريع مكتمله</p>
+          </div>
+          <div class="stat">
+            <h3 class="stat-num" ">0</h3>
+            <p>عملاء متميزون</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2 class="section-title">مشاريعي</h2>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Example project card -->
+        <article class="project-card">
+          <img src="./images/لقطة شاشة 2025-11-07 142455.png" alt="GamingZone" class="project-img">
+          <div class="project-body">
+            <h3>GamingZone — متجر ألعاب</h3>
+            <p>صفحة رئيسية متجاوبة + شبكة منتجات + تصميم Dark/Light theme.</p>
+            <div class="project-actions">
+              <a href="https://ashraf-21321.github.io/GamingZone/" target="_blank" class="btn small">شيفرة المشروع</a>
+              <a href="https://ashraf-21321.github.io/My-first-complete-project/" target="_blank" class="btn small ghost">عرض مباشر</a>
+              <button class="btn small outline view-more" data-title="GamingZone" data-desc="متجر ألعاب متجاوب مع خصائص CSS Grid وFlex" data-img="./images/لقطة شاشة 2025-11-07 142455.png">عرض</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- copy-paste more cards or dynamically add -->
+      </div>
+
+      <div style="text-align:center; margin-top:22px;">
+        <a href="#" id="moreProjects" class="btn">أعرض المزيد</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2 class="section-title">مهاراتي التقنية</h2>
+
+      <div class="skills-grid">
+        <div class="skill">
+          <h4>HTML & Semantics</h4>
+          <div class="skill-bar"><span style="--val:95%">95%</span></div>
+        </div>
+        <div class="skill">
+          <h4>CSS (Flex / Grid / Animations)</h4>
+          <div class="skill-bar"><span style="--val:92%">92%</span></div>
+        </div>
+        <div class="skill">
+          <h4>JavaScript (ES6+)</h4>
+          <div class="skill-bar"><span style="--val:85%">85%</span></div>
+        </div>
+        <div class="skill">
+          <h4>Responsive & Performance</h4>
+          <div class="skill-bar"><span style="--val:88%">88%</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2 class="section-title">تواصل معي</h2>
+
+      <div class="contact-grid">
+<form action="https://formspree.io/f/mnnoeeyo" method="POST" class="contact-form">
+          <div class="form-row">
+            <input type="text" id="name" name="name" placeholder="اسمك" required>
+            <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" required>
+          </div>
+          <textarea id="message" name="message" rows="6" placeholder="اكتب رسالتك..." required></textarea>
+          <div class="form-row form-actions">
+            <button type="submit" class="btn primary">أرسل رسالة</button>
+            <button type="reset" class="btn ghost">إعادة</button>
+          </div>
+          <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-info">
+          <h3>معلومات التواصل</h3>
+          <p><i class="fa-solid fa-location-dot"></i> القاهرة، مصر</p>
+          <p><i class="fa-solid fa-envelope"></i> <a href="alahmdyakwnashrf@gmail.com">alahmdyakwnashrf@gmail.com</a></p>
+          <p><i class="fa-solid fa-phone"></i> <a href="tel:+201234567890">+alahmdyakwnashrf@gmail.com 20  01002957483</a></p>
+
+          <div class="socials">
+            <a href="https://github.com/yourusername" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.behance.net/yourprofile" target="_blank"><i class="fa-brands fa-behance"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Ashraf Yasser — Front-End Developer. كل الحقوق محفوظة.</p>
+      <div>Made with <i class="fa-solid fa-heart"></i> &amp; <i class="fa-solid fa-mug-hot"></i></div>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-inner">
+      <button id="modalClose" class="modal-close" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+      <img id="modalImg" src="" alt="" />
+      <div class="modal-content">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <a id="modalViewCode" class="btn small" href="#" target="_blank">شوف الشيفرة</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
